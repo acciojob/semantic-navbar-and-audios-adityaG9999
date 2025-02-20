@@ -1,16 +1,57 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+    <header>
+        <h1 role="heading">John Doe - Web Developer</h1>
+    </header>
+    
+    <nav role="navigation">
+        <ul role="list">
+            <li role="listitem"><a href="#about">About</a></li>
+            <li role="listitem"><a href="#projects">Projects</a></li>
+            <li role="listitem"><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <section id="about">
+        <img src="profile.jpg" alt="John Doe smiling at the camera" role="img">
+        <p>Hello! I'm John Doe, a passionate web developer specializing in accessible and user-friendly web applications.</p>
+    </section>
+    
+    <section id="projects">
+        <h2 role="heading">Projects</h2>
+        <ul role="list">
+            <li role="listitem">Accessible Portfolio Website</li>
+            <li role="listitem">E-commerce Web Application</li>
+            <li role="listitem">Interactive Data Visualization Dashboard</li>
+        </ul>
+    </section>
+    
+    <section id="contact">
+        <h2 role="heading">Contact</h2>
+        <p>Email: johndoe@example.com</p>
+    </section>
+    
+    <section id="audio">
+        <h2 role="heading">3 Random Audios</h2>
+        <audio controls>
+            <source src="http://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio controls>
+            <source src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio controls>
+            <source src="http://codeskulptor-demos.commondatastorage.googleapis.com/pang/paza-moduless.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
 </body>
-
 </html>
